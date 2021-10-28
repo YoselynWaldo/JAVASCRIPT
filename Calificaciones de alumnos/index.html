@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de calificaciones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="row justify-content-center">
+        <class class="col-md-4 justify-content" id="main">
+            <label for="txt-nombre" class="form-label mt-5">Número de Carnet</label>
+            <input type="text" class="form-control col-md-3 mb-3" name="txt-numero-carnet" id="txt-nombre-carnet" placeholder="N° Carnet">
+            <div><label for="txt-nombre" class="form-label mt-3">Nombre del alumno</label>
+            <input type="text" class="form-control col-md-3 mb-3" name="txt-nombre" id="txt-nombre-alumno" placeholder="Nombre del alumno"></div>
+            <div><label for="txt-nombre" class="form-label mt-0.5">Materia</label>
+                <input type="text" class="form-control col-md-3 mb-3" name="txt-materia" id="txt-materia" placeholder="Materia"></div>
+            <div class="notas">
+                <label for="notas" class="form-label mb-1">Notas de Inglés:</label></br></br>
+                <label for="notas" class="form-label2 ">Primer Período</label></br>
+                <input type="text" class="form-control" id="primerPeriodo" placeholder="Nota Primer Período">
+                <label for="notas" class="form-label2">Segundo Período</label></br>
+                <input type="text" class="form-control" id="segundoPeriodo" placeholder="Nota Segundo Período">
+                <label for="notas" class="form-label2">Tercer Período</label></br>
+                <input type="text" class="form-control" id="tercerPeriodo" placeholder="Nota Tercer Período">
+                <label for="notas" class="form-label2">Cuarto Período</label></br>
+                <input type="text" class="form-control" id="cuartoPeriodo" placeholder="Nota Cuarto Período">
+            </div></br>
+            
+            <button type="button" class="btn btn-primary col-md-5 " id="btn-enviar" >Enviar</button>
+            <button type="button" class="btn btn-success col-md-5 " id="btn-notaFinal" >Notas Finales</button>
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">N° Carnet</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Materia</th>
+                    <th scope="col">Promedio</th>
+                  </tr>
+                </thead>
+                <tbody id="datosObtenidos">
+                </tbody>
+              </table>
+        </div>
+        </class>
+        
+</body>
+<script script src="index.js"></script>
+
+</html>
